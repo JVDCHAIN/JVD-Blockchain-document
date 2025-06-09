@@ -1,18 +1,16 @@
 # Local Setup
 
-
-
 {% hint style="danger" %}
 **THIS GUIDE IS FOR TESTING PURPOSES ONLY**
 
-The below guide will instruct you on how to set up a Z Edge network on your local machine for testing and development purposes.
+The below guide will instruct you on how to set up a JUVIDOE Edge network on your local machine for testing and development purposes.
 
-The procedure differs greatly from the way you would want to set up Z Edge network for a real use scenario on a cloud provider:[ Cloud Setup](cloud-setup.md)
+The procedure differs greatly from the way you would want to set up JUVIDOE Edge network for a real use scenario on a cloud provider:[ Cloud Setup](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/cloud-setup)
 {% endhint %}
 
 ### Requirements[​](https://polygon-edge-v063.evmbuilder.com/docs/get-started/set-up-ibft-locally#requirements) <a href="#requirements" id="requirements"></a>
 
-Refer to [Installation](https://polygon-edge-v063.evmbuilder.com/docs/get-started/installation) to install JUVIDOE Edge.
+Refer to [Installation](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/installation) to install JUVIDOE Edge.
 
 ### Overview[​](https://polygon-edge-v063.evmbuilder.com/docs/get-started/set-up-ibft-locally#overview) <a href="#overview" id="overview"></a>
 
@@ -105,7 +103,7 @@ JUVIDOE-edge genesis --consensus ibft --ibft-validators-prefix-path test-chain- 
 
 What this command does:
 
-* The `--ibft-validators-prefix-path` sets the prefix folder path to the one specified which IBFT in Z Edge can use. This directory is used to house the `consensus/` folder, where the validator's private key is kept. The validator's public key is needed in order to build the genesis file - the initial list of bootstrap nodes. This flag only makes sense when setting up the network on localhost, as in a real-world scenario we cannot expect all the nodes' data directories to be on the same filesystem from where we can easily read their public keys.
+* The `--ibft-validators-prefix-path` sets the prefix folder path to the one specified which IBFT in JUVIDOE Edge can use. This directory is used to house the `consensus/` folder, where the validator's private key is kept. The validator's public key is needed in order to build the genesis file - the initial list of bootstrap nodes. This flag only makes sense when setting up the network on localhost, as in a real-world scenario we cannot expect all the nodes' data directories to be on the same filesystem from where we can easily read their public keys.
 * The `--bootnode` sets the address of the bootnode that will enable the nodes to find each other. We will use the multiaddr string of the `node 1`, as mentioned in **step 2**.
 
 The result of this command is the `genesis.json` file which contains the genesis block of our new blockchain, with the predefined validator set and the configuration for which node to contact first in order to establish connectivity.
@@ -153,8 +151,6 @@ To do so, you can use the flag `--block-gas-limit` followed by the desired value
 {% endhint %}
 
 {% hint style="warning" %}
-
-
 **SET SYSTEM FILE DESCRIPTOR LIMIT**
 
 The default file descriptor limit ( maximum number of open files ) on some operating systems is pretty small. If the nodes are expected to have high throughput, you might consider increasing this limit on the OS level.
@@ -308,7 +304,7 @@ To briefly go over what has been done so far:
 * The _seal_ flag means that the node which is being started is going to participate in block sealing
 * The _chain_ flag specifies which genesis file should be used for chain configuration
 
-The structure of the genesis file is covered in the [CLI Commands](https://polygon-edge-v063.evmbuilder.com/docs/get-started/cli-commands) section.
+The structure of the genesis file is covered in the [CLI Commands](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/cli-commands) section.
 
 After running the previous commands, you have set up a 4 node JUVIDOE Edge network, capable of sealing blocks and recovering from node failure.
 
