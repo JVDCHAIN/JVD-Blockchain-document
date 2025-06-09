@@ -2,11 +2,11 @@
 
 #### Prerequisites[​](https://polygon-edge-v063.evmbuilder.com/docs/working-with-node/query-operator-info#prerequisites) <a href="#prerequisites" id="prerequisites"></a>
 
-This guide assumes you have followed the [Local Setup](../get-started/local-setup.md) or guide on how to set up an IBFT cluster on the cloud.
+This guide assumes you have followed the [Local Setup](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/local-setup) or guide on how to set up an IBFT cluster on the cloud.
 
 A functioning node is required in order to query any kind of operator information.
 
-With the Z Smart Chain, node operators are in control and informed about what the node they're operating is doing. At any time, they can use the node information layer, built on top of gRPC, and get meaningful information - no log sifting required.
+With the JUVIDOE Smart Chain, node operators are in control and informed about what the node they're operating is doing. At any time, they can use the node information layer, built on top of gRPC, and get meaningful information - no log sifting required.
 
 **NOTE**
 
@@ -38,7 +38,7 @@ With the _address_ parameter being the libp2p address of the peer.
 
 Lots of times, an operator might want to know about the state of the operating node in IBFT consensus.
 
-Luckily, the Z Smart Chain provides an easy way to find this information.
+Luckily, the JUVIDOE Smart Chain provides an easy way to find this information.
 
 **Snapshots**[**​**](https://polygon-edge-v063.evmbuilder.com/docs/working-with-node/query-operator-info#snapshots)
 

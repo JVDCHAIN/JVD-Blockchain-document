@@ -56,7 +56,7 @@ JUVIDOE-edge secrets generate --type gcp-ssm --dir <PATH> --name <NODE_NAME> --e
 Parameters present:
 
 * `PATH` is the path to which the configuration file should be exported to. Default `./secretsManagerConfig.json`
-* `NODE_NAME` is the name of the current node for which the GCP SM configuration is being set up as. It can be an arbitrary value. Default`z-edge-node`
+* `NODE_NAME` is the name of the current node for which the GCP SM configuration is being set up as. It can be an arbitrary value. Default`juvidoe-edge-node`
 * `PROJECT_ID` is the ID of the project the user has defined in GCP console during account setup and Secrets Manager API activation.
 * `GCP_CREDS_FILE` is the path to the json file containing credentials which will allow read/write access to the Secrets Manager.
 

@@ -79,7 +79,7 @@ After updating the validator set at the epoch block, the validator set (either c
 Epoch lengths (in blocks) are modifiable when generating the genesis file, by using a special flag `--epoch-size`:
 
 ```
--z genesis --epoch-size 50 ...
+-juvidoe genesis --epoch-size 50 ...
 ```
 
 The default size of an epoch is `100000` blocks in the EVMBuilder Edge.

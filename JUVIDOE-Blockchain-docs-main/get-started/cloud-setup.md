@@ -5,7 +5,7 @@
 
 The below guide will instruct you on how to set up a EVMBuilder Edge network on a cloud provider for a production setup of your testnet or mainnet.
 
-If you would like to setup a EVMBuilder Edge network locally to quickly test the`z-edge` before doing a production-like setup, please refer to Local Setup
+If you would like to setup a EVMBuilder Edge network locally to quickly test the`juvidoe-edge` before doing a production-like setup, please refer to Local Setup
 {% endhint %}
 
 ### Requirements

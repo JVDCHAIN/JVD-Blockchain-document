@@ -2,7 +2,7 @@
 
 #### Overview[​](https://polygon-edge-v063.evmbuilder.com/docs/working-with-node/query-json-rpc#overview) <a href="#overview" id="overview"></a>
 
-The JSON-RPC layer of the Z Smart Chain provides developers with the functionality of easily interacting with the blockchain, through HTTP requests.
+The JSON-RPC layer of the JUVIDOE Smart Chain provides developers with the functionality of easily interacting with the blockchain, through HTTP requests.
 
 This example covers using tools like **curl** to query information, as well as starting the chain with a premined account, and sending a transaction.
 
@@ -11,7 +11,7 @@ This example covers using tools like **curl** to query information, as well as s
 To generate a genesis file, run the following command:
 
 ```
-z-edge genesis --premine 0x1010101010101010101010101010101010101010
+juvidoe-edge genesis --premine 0x1010101010101010101010101010101010101010
 ```
 
 The **premine** flag sets the address that should be included with a starting balance in the **genesis** file. In this case, the address `0x1010101010101010101010101010101010101010` will have a starting **default balance** of `0x3635C9ADC5DEA00000 wei`.
@@ -19,7 +19,7 @@ The **premine** flag sets the address that should be included with a starting ba
 If we wanted to specify a balance, we can separate out the balance and address with a `:`, like so:
 
 ```
-z-edge genesis --premine 0x1010101010101010101010101010101010101010:0x123123
+juvidoe-edge genesis --premine 0x1010101010101010101010101010101010101010:0x123123
 ```
 
 The balance can be either a `hex` or `uint256` value.
@@ -30,12 +30,12 @@ The balance can be either a `hex` or `uint256` value.
 If you premine accounts and do not have a private key to access them, you premined balance will not be usable
 {% endhint %}
 
-#### Step 2: Start the Z Smart Chain in dev mode[​](https://polygon-edge-v063.evmbuilder.com/docs/working-with-node/query-json-rpc#step-2-start-the-polygon-edge-in-dev-mode) <a href="#step-2-start-the-polygon-edge-in-dev-mode" id="step-2-start-the-polygon-edge-in-dev-mode"></a>
+#### Step 2: Start the JUVIDOE Smart Chain in dev mode[​](https://polygon-edge-v063.evmbuilder.com/docs/working-with-node/query-json-rpc#step-2-start-the-polygon-edge-in-dev-mode) <a href="#step-2-start-the-polygon-edge-in-dev-mode" id="step-2-start-the-polygon-edge-in-dev-mode"></a>
 
-To start the Z Smart Chain in development mode, which is explained in the [CLI Commands](../get-started/cli-commands.md) section, run the following:
+To start the JUVIDOE Smart Chain in development mode, which is explained in the [CLI Commands](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/cli-commands) section, run the following:
 
 ```
-z-edge server --chain genesis.json --dev --log-level debug
+juvidoe-edge server --chain genesis.json --dev --log-level debug
 ```
 
 #### Step 3: Query the account balance[​](https://polygon-edge-v063.evmbuilder.com/docs/working-with-node/query-json-rpc#step-3-query-the-account-balance) <a href="#step-3-query-the-account-balance" id="step-3-query-the-account-balance"></a>

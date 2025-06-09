@@ -199,7 +199,7 @@ The first scenario does not produce any error.
 > This happens whenever you get the following error:
 >
 > ```
-> 2021-11-04T15:41:07.665+0100 [ERROR] z.consensus.dev: failed to write transaction: transaction's gas limit exceeds block gas limit
+> 2021-11-04T15:41:07.665+0100 [ERROR] juvidoe.consensus.dev: failed to write transaction: transaction's gas limit exceeds block gas limit
 > ```
 
 ### Block Gas Target
