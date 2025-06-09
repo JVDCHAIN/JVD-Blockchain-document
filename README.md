@@ -10,9 +10,9 @@ JUVIDOE Chain also supports communication with multiple blockchain networks, ena
 
 Industry standard wallets can be used to interact with JUVIDOE Chain through the [JSON-RPC](https://tuoitresoft-1.gitbook.io/untitled/architecture/modules/json-rpc) endpoints and node operators can perform various actions on the nodes through the [gRPC](https://tuoitresoft-1.gitbook.io/untitled/working-with-a-node/query-operator-information) protocol.
 
-To find out more about JUVIDOE Chain, visit the [official website](https://github.com/ZChain-168168).
+To find out more about JUVIDOE Chain, visit the [official website](https://github.com/JVDCHAIN).
 
-[**GitHub repository**](https://github.com/ZChain-168168)
+[**GitHub repository**](https://github.com/JVDCHAIN/JVD-Blockchain)
 
 {% hint style="danger" %}
 **CAUTION**
