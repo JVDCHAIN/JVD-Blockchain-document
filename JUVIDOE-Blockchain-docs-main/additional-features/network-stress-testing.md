@@ -4,12 +4,12 @@
 
 This guide assumes that:
 
-* You have a working EVMBuilder Edge network up and running
+* You have a working Juvidoe Edge network up and running
 * Both your JSON-RPC and GRPC endpoints are reachable
 
 ### Overview
 
-The EVMBuilder Edge Loadbot is a helper utility that is meant to stress test a EVMBuilder Edge network.
+The Juvidoe Edge Loadbot is a helper utility that is meant to stress test a Juvidoe Edge network.
 
 Currently, it supports 2 modes:
 

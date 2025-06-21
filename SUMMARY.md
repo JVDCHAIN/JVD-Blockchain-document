@@ -29,7 +29,7 @@
   * [Propose a new feature](JUVIDOE-Blockchain-docs-main/community/propose-a-new-feature.md)
   * [Report an issue](JUVIDOE-Blockchain-docs-main/community/report-an-issue.md)
 * [Concepts](JUVIDOE-Blockchain-docs-main/concepts/README.md)
-  * [State in Ethereum](JUVIDOE-Blockchain-docs-main/concepts/state-in-ethereum.md)
+  * [State in Juvidoe](JUVIDOE-Blockchain-docs-main/concepts/state-in-ethereum.md)
 * [Configuration](JUVIDOE-Blockchain-docs-main/configuration/README.md)
   * [Enable Prometheus metrics](JUVIDOE-Blockchain-docs-main/configuration/enable-prometheus-metrics.md)
   * [Manage private keys](JUVIDOE-Blockchain-docs-main/configuration/manage-private-keys.md)

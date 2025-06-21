@@ -1,11 +1,10 @@
-
 # Set up and use Proof of Stake (PoS)
 
 ### Overview
 
-This guide goes into detail on how to set up a Proof of Stake network with the EVMBuilder Edge, how to stake funds for nodes to become validators and how to unstake funds.
+This guide goes into detail on how to set up a Proof of Stake network with the Juvidoe Edge, how to stake funds for nodes to become validators and how to unstake funds.
 
-It **highly encouraged** to read and go through the Local Setup / Cloud Setup sections, before going along with this PoS guide. These sections outline the steps needed to start a Proof of Authority (PoA) cluster with the EVMBuilder Edge.
+It **highly encouraged** to read and go through the Local Setup / Cloud Setup sections, before going along with this PoS guide. These sections outline the steps needed to start a Proof of Authority (PoA) cluster with the Juvidoe Edge.
 
 Currently, there is no limit to the number of validators that can stake funds on the Staking Smart Contract.
 
@@ -17,7 +16,7 @@ It holds the necessary testing scripts, ABI files and most importantly the Staki
 
 ### Setting up an N node cluster
 
-Setting up a network with the EVMBuilder Edge is covered in the Local Setup / Cloud Setup sections.
+Setting up a network with the Juvidoe Edge is covered in the Local Setup / Cloud Setup sections.
 
 The **only difference** between setting up a PoS and PoA cluster is in the genesis generation part.
 

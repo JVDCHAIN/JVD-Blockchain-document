@@ -3,7 +3,7 @@
 ### Overview
 
 If you want to include a fix, or just contribute to the code, it is highly encouraged for you to reach out to the team first.\
-The EVMBuilder Edge uses a relatively basic feature proposition template, that is concise and to the point.
+The JVMBuilder Edge uses a relatively basic feature proposition template, that is concise and to the point.
 
 ### PR Template
 

@@ -2,9 +2,9 @@
 
 ### Overview
 
-The EVMBuilder Edge currently utilizes **LevelDB** for data storage, as well as an **in-memory** data store.
+The JVMBuilder Edge currently utilizes **LevelDB** for data storage, as well as an **in-memory** data store.
 
-Throughout the EVMBuilder Edge, when modules need to interact with the underlying data store, they don't need to know which DB engine or service they're speaking to.
+Throughout the JVMBuilder Edge, when modules need to interact with the underlying data store, they don't need to know which DB engine or service they're speaking to.
 
 The DB layer is abstracted away between a module called **Storage**, which exports interfaces that modules query.
 
@@ -54,7 +54,7 @@ type Storage interface {
 
 #### Prefixes
 
-In order to make querying the LevelDB storage deterministic, and to avoid key storage clashing, the EVMBuilder Edge leverages prefixes and sub-prefixes when storing data
+In order to make querying the LevelDB storage deterministic, and to avoid key storage clashing, the JVMBuilder Edge leverages prefixes and sub-prefixes when storing data
 
 blockchain/storage/keyvalue.go
 

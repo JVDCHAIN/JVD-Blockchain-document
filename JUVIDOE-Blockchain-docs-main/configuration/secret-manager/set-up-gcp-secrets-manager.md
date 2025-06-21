@@ -2,20 +2,20 @@
 
 ### Overview
 
-Currently, the EVMBuilder Edge is concerned with keeping 2 major runtime secrets:
+Currently, the Juvidoe Edge is concerned with keeping 2 major runtime secrets:
 
 * The **validator private key** used by the node, if the node is a validator
 * The **networking private key** used by libp2p, for participating and communicating with other peers
 
 For additional information, please read through the Managing Private Keys Guide
 
-The modules of the EVMBuilder Edge **should not need to know how to keep secrets**. Ultimately, a module should not care if a secret is stored on a far-away server or locally on the node's disk.
+The modules of the Juvidoe Edge **should not need to know how to keep secrets**. Ultimately, a module should not care if a secret is stored on a far-away server or locally on the node's disk.
 
 Everything a module needs to know about secret-keeping is **knowing to use the secret**, **knowing which secrets to get or save**. The finer implementation details of these operations are delegated away to the `SecretsManager`, which of course is an abstraction.
 
-The node operator that's starting the EVMBuilder Edge can now specify which secrets manager they want to use, and as soon as the correct secrets manager is instantiated, the modules deal with the secrets through the mentioned interface - without caring if the secrets are stored on a disk or on a server.
+The node operator that's starting the Juvidoe Edge can now specify which secrets manager they want to use, and as soon as the correct secrets manager is instantiated, the modules deal with the secrets through the mentioned interface - without caring if the secrets are stored on a disk or on a server.
 
-This article details the necessary steps to get the EVMBuilder Edge up and running with [GCP Secret Manager](https://cloud.google.com/secret-manager).
+This article details the necessary steps to get the Juvidoe Edge up and running with [GCP Secret Manager](https://cloud.google.com/secret-manager).
 
 {% hint style="warning" %}
 **PREVIOUS GUIDES**
@@ -45,7 +45,7 @@ Required information before continuing:
 
 ### Step 1 - Generate the secrets manager configuration
 
-In order for the EVMBuilder Edge to be able to seamlessly communicate with the GCP SM, it needs to parse an already generated config file, which contains all the necessary information for secret storage on GCP SM.
+In order for the Juvidoe Edge to be able to seamlessly communicate with the GCP SM, it needs to parse an already generated config file, which contains all the necessary information for secret storage on GCP SM.
 
 To generate the configuration, run the following command:
 
@@ -65,7 +65,7 @@ Parameters present:
 
 Be careful when specifying node names.
 
-The EVMBuilder Edge uses the specified node name to keep track of the secrets it generates and uses on the GCP SM. Specifying an existing node name can have consequences of failing to write secret to GCP SM.
+The Juvidoe Edge uses the specified node name to keep track of the secrets it generates and uses on the GCP SM. Specifying an existing node name can have consequences of failing to write secret to GCP SM.
 
 Secrets are stored on the following base path: `projects/PROJECT_ID/NODE_NAME`
 {% endhint %}
@@ -90,9 +90,9 @@ Since GCP SM is being used instead of the local file system, validator addresses
 JUVIDOE-edge genesis --ibft-validator <VALIDATOR_ADDRESS> ...
 ```
 
-### Step 4 - Start the EVMBuilder Edge client
+### Step 4 - Start the Juvidoe Edge client
 
-Now that the keys are set up, and the genesis file is generated, the final step to this process would be starting the EVMBuilder Edge with the `server` command.
+Now that the keys are set up, and the genesis file is generated, the final step to this process would be starting the Juvidoe Edge with the `server` command.
 
 The `server` command is used in the same manner as in the previously mentioned guides, with a minor addition - the `--secrets-config` flag:
 

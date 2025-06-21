@@ -1,6 +1,6 @@
 # CLI Commands
 
-This section details the present commands, command flags in the EVMBuilder Edge, and how they're used.
+This section details the present commands, command flags in the Juvidoe Edge, and how they're used.
 
 {% hint style="success" %}
 **JSON OUTPUT SUPPORT**
@@ -45,7 +45,7 @@ server --data-dir ./example-dir
 {% endtab %}
 {% endtabs %}
 
-Used to specify the data directory used for storing EVMBuilder Edge client data. Default: `./test-chain`.
+Used to specify the data directory used for storing JVMBuilder Edge client data. Default: `./test-chain`.
 
 ***
 
@@ -484,7 +484,7 @@ genesis --dir ./genesis.json
 {% endtab %}
 {% endtabs %}
 
-Sets the directory for the EVMBuilder Edge genesis data. Default: `./genesis.json`.
+Sets the directory for the JVMBuilder Edge genesis data. Default: `./genesis.json`.
 
 ***
 
@@ -1156,7 +1156,7 @@ Address of the gRPC API. Default: `127.0.0.1:9632`.
 | **Command**      | **Description**                                                                           |
 | ---------------- | ----------------------------------------------------------------------------------------- |
 | secrets init     | Initializes the private keys to the corresponding secrets manager                         |
-| secrets generate | Generates a secrets manager configuration file which can be parsed by the EVMBuilder Edge |
+| secrets generate | Generates a secrets manager configuration file which can be parsed by the JVMBuilder Edge |
 
 #### secrets init flags
 
@@ -1188,7 +1188,7 @@ secrets init --data-dir ./example-dir
 {% endtab %}
 {% endtabs %}
 
-Sets the directory for the EVMBuilder Edge data if the local FS is used.
+Sets the directory for the JVMBuilder Edge data if the local FS is used.
 
 #### secrets generate flags
 

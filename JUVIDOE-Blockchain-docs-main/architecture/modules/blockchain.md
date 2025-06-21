@@ -2,7 +2,7 @@
 
 ### Overview
 
-One of the main modules of the EVMBuilder Edge are **Blockchain** and **State**.\\
+One of the main modules of the Juvidoe Edge are **Blockchain** and **State**.\\
 
 **Blockchain** is the powerhouse that deals with block reorganizations. This means that it deals with all the logic that happens when a new block is included in the blockchain.
 
@@ -10,7 +10,7 @@ One of the main modules of the EVMBuilder Edge are **Blockchain** and **State**.
 Among other things, **State** handles:
 
 * Executing transactions
-* Executing the EVM
+* Executing the JVM
 * Changing the Merkle tries
 * Much more, which is covered in the corresponding **State** section 🙂
 
@@ -155,5 +155,5 @@ type Event struct {
 
 Do you remember when we mentioned the _**monitor**_ command in the CLI Commands?
 
-The Blockchain Events are the original events that happen in EVMBuilder Edge, and they're later mapped to a Protocol Buffers message format for easy transfer.
+The Blockchain Events are the original events that happen in Juvidoe Edge, and they're later mapped to a Protocol Buffers message format for easy transfer.
 {% endhint %}

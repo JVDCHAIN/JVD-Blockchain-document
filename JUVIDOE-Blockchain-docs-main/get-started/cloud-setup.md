@@ -3,14 +3,14 @@
 {% hint style="warning" %}
 **THIS GUIDE IS FOR MAINNET OR TESTNET SETUPS**
 
-The below guide will instruct you on how to set up a EVMBuilder Edge network on a cloud provider for a production setup of your testnet or mainnet.
+The below guide will instruct you on how to set up a JVMBuilder Edge network on a cloud provider for a production setup of your testnet or mainnet.
 
-If you would like to setup a EVMBuilder Edge network locally to quickly test the`juvidoe-edge` before doing a production-like setup, please refer to Local Setup
+If you would like to setup a JVMBuilder Edge network locally to quickly test the`juvidoe-edge` before doing a production-like setup, please refer to Local Setup
 {% endhint %}
 
 ### Requirements
 
-Refer to Installation to install EVMBuilder Edge.
+Refer to Installation to install JVMBuilder Edge.
 
 #### Setting up the VM connectivity <a href="#setting-up-the-vm-connectivity" id="setting-up-the-vm-connectivity"></a>
 
@@ -20,7 +20,7 @@ As the only part of the`JUVIDOE-edge` that needs to be exposed to other VMs is t
 
 ### Overview
 
-In this guide, our goal is to establish a working `JUVIDOE-edge` blockchain network working with [IBFT consensus protocol](https://github.com/ethereum/EIPs/issues/650). The blockchain network will consist of 4 nodes of whom all 4 are validator nodes, and as such are eligible for both proposing block, and validating blocks that came from other proposers. Each of the 4 nodes will run on their own VM, as the idea of this guide is to give you a fully functional EVMBuilder Edge network while keeping the validator keys private to ensure a trustless network setup.
+In this guide, our goal is to establish a working `JUVIDOE-edge` blockchain network working with [IBFT consensus protocol](https://github.com/ethereum/EIPs/issues/650). The blockchain network will consist of 4 nodes of whom all 4 are validator nodes, and as such are eligible for both proposing block, and validating blocks that came from other proposers. Each of the 4 nodes will run on their own VM, as the idea of this guide is to give you a fully functional JVMBuilder Edge network while keeping the validator keys private to ensure a trustless network setup.
 
 To achieve that, we will guide you through 4 easy steps:
 
@@ -40,7 +40,7 @@ The minimum recommended number of nodes for achieving a BFT guarantee is 4 - sin
 
 ### Step 1: Initialize data folders and generate validator keys
 
-To get up and running with EVMBuilder Edge, you need to initialize the data folders, on each node:
+To get up and running with JVMBuilder Edge, you need to initialize the data folders, on each node:
 
 ```
 node-1> JUVIDOE-edge secrets init --data-dir data-dir
@@ -70,7 +70,7 @@ The data directories generated above, besides initializing the directories for h
 
 For a node to successfully establish connectivity, it must know which `bootnode` server to connect to gain information about all the remaining nodes on the network. The `bootnode` is sometimes also known as the `rendezvous` server in p2p jargon.
 
-`bootnode` is not a special instance of a EVMBuilder Edge node. Every EVMBuilder Edge node can serve as a `bootnode` and every EVMBuilder Edge node needs to have a set of bootnodes specified which will be contacted to provide information on how to connect with all remaining nodes in the network.
+`bootnode` is not a special instance of a JVMBuilder Edge node. Every JVMBuilder Edge node can serve as a `bootnode` and every JVMBuilder Edge node needs to have a set of bootnodes specified which will be contacted to provide information on how to connect with all remaining nodes in the network.
 
 To create the connection string for specifying the bootnode, we will need to conform to the [multiaddr format](https://docs.libp2p.io/concepts/addressing/):
 
@@ -340,7 +340,7 @@ To run the **fourth** client:
 node-4> JUVIDOE-edge server --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
 ```
 
-After running the previous commands, you have set up a 4 node EVMBuilder Edge network, capable of sealing blocks and recovering from node failurfailure.
+After running the previous commands, you have set up a 4 node JVMBuilder Edge network, capable of sealing blocks and recovering from node failurfailure.
 
 {% hint style="warning" %}
 **START THE CLIENT USING CONFIG FILE**
@@ -379,7 +379,7 @@ JUVIDOE-edge server --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:
 {% hint style="warning" %}
 **SPECIFY THE PRICE LIMIT**
 
-A EVMBuilder Edge node can be started with a set **price limit** for incoming transactions.
+A JVMBuilder Edge node can be started with a set **price limit** for incoming transactions.
 
 The unit for the price limit is `wei`.
 

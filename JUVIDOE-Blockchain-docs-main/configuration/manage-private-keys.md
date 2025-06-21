@@ -2,14 +2,14 @@
 
 ### Overview
 
-The EVMBuilder Edge has two types of private keys that it directly manages:
+The Juvidoe Edge has two types of private keys that it directly manages:
 
 * **Private key used for the consensus mechanism**
 * **Private key used for networking by libp2p**
 
-Currently, the EVMBuilder Edge doesn't offer support for direct account management.
+Currently, the Juvidoe Edge doesn't offer support for direct account management.
 
-Based on the directory structure outlined in the Backup & Restore guide, the EVMBuilder Edge stores these mentioned key files in two distinct directories - **consensus** and **keystore**.
+Based on the directory structure outlined in the Backup & Restore guide, the Juvidoe Edge stores these mentioned key files in two distinct directories - **consensus** and **keystore**.
 
 ### Key format
 
@@ -23,7 +23,7 @@ The private keys are stored in simple **Base64 format**, so they can be human-re
 {% hint style="warning" %}
 **KEY TYPE**
 
-All private key files generated and used inside the EVMBuilder Edge are relying on ECDSA with the curve [secp256k1](https://en.bitcoin.it/wiki/Secp256k1).
+All private key files generated and used inside the Juvidoe Edge are relying on ECDSA with the curve [secp256k1](https://en.bitcoin.it/wiki/Secp256k1).
 
 As the curve is non-standard, it cannot be encoded and stored in any standardized PEM format. Importing keys that don't conform to this key type is not supported.
 {% endhint %}

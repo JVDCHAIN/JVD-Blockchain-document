@@ -8,7 +8,7 @@ It includes support for standard [**json-rpc endpoints**](https://eth.wiki/json-
 
 ### Blockchain Interface
 
-The EVMBuilder Edge uses the _**blockchain interface**_ to define all the methods that the JSON RPC module needs to use, in order to deliver its endpoints.
+The JVMBuilder Edge uses the _**blockchain interface**_ to define all the methods that the JSON RPC module needs to use, in order to deliver its endpoints.
 
 The blockchain interface is implemented by the **Minimal** server. It is the base implementation that's passed into the JSON RPC layer.
 

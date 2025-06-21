@@ -410,7 +410,7 @@ Object - The transaction call object
 * gas: QUANTITY - (optional) Integer of the gas provided for the transaction execution. eth\_call consumes zero gas, but this parameter may be needed by some executions.
 * gasPrice: QUANTITY - (optional) Integer of the gasPrice used for each paid gas
 * value: QUANTITY - (optional) Integer of the value sent with this transaction
-* data: DATA - (optional) Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI in the Solidity documentation
+* data: DATA - (optional) Hash of the method signature and encoded parameters. For details see Juvidoe Contract ABI in the Solidity documentation
 * QUANTITY|TAG - integer block number, or the string "latest", see the default block paramete
 
 _**Returns:**_
@@ -447,7 +447,7 @@ curl  https://rpc.poa.psdk.io:8545 -X POST -H "Content-Type: application/json" -
 
 #### eth\_estimateGas
 
-Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. Note that the estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including EVM mechanics and node performance.
+Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. Note that the estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including JVM mechanics and node performance.
 
 ***
 
@@ -462,7 +462,7 @@ Object - The transaction call object
 * gas: QUANTITY - Integer of the gas provided for the transaction execution. eth\_call consumes zero gas, but this parameter may be needed by some executions.
 * gasPrice: QUANTITY - Integer of the gasPrice used for each paid gas
 * value: QUANTITY - Integer of the value sent with this transaction
-* data: DATA - Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI in the Solidity documentation
+* data: DATA - Hash of the method signature and encoded parameters. For details see Juvidoe Contract ABI in the Solidity documentation
 * QUANTITY|TAG - integer block number, or the string "latest", see the default block paramete
 
 _**Returns:**_

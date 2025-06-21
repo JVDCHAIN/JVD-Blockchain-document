@@ -1,17 +1,17 @@
 # State
 
-To truly understand how **State** works, you must understand some basic Ethereum concepts.\\
+To truly understand how **State** works, you must understand some basic Juvidoe concepts.\\
 
-We highly recommend reading the **State in Ethereum guide**.
+We highly recommend reading the **State in Juvidoe guide**.
 
 ### Overview
 
-Now that we've familiarized ourselves with basic Ethereum concepts, the next overview should be easy.
+Now that we've familiarized ourselves with basic Juvidoe concepts, the next overview should be easy.
 
-We mentioned that the **World state trie** has all the Ethereum accounts that exist.\
+We mentioned that the **World state trie** has all the Juvidoe accounts that exist.\
 These accounts are the leaves of the Merkle trie. Each leaf has encoded **Account State** information.
 
-This enables the EVMBuilder Edge to get a specific Merkle trie, for a specific point in time.\
+This enables the Juvidoe Edge to get a specific Merkle trie, for a specific point in time.\
 For example, we can get the hash of the state at block 10.
 
 The Merkle trie, at any point in time, is called a _**Snapshot**_.
@@ -73,15 +73,15 @@ type Object struct {
 ```
 
 The implementation for the Merkle trie is in the _state/immutable-trie_ folder.\
-&#xNAN;_&#x73;tate/immutable-trie/state.go_ implements the **State** interface.
+\&#xNAN;_state/immutable-trie/state.go_ implements the **State** interface.
 
 _state/immutable-trie/trie.go_ is the main Merkle trie object. It represents an optimized version of the Merkle trie, which reuses as much memory as possible.
 
 ### Executor
 
-_state/executor.go_ includes all the information needed for the EVMBuilder Edge to decide how a block changes the current state. The implementation of _ProcessBlock_ is located here.
+_state/executor.go_ includes all the information needed for the Juvidoe Edge to decide how a block changes the current state. The implementation of _ProcessBlock_ is located here.
 
-The _apply_ method does the actual state transition. The executor calls the EVM.
+The _apply_ method does the actual state transition. The executor calls the JVM.
 
 state/executor.go
 
@@ -154,11 +154,11 @@ func (t *Transition) apply(msg *types.Transaction) ([]byte, uint64, bool, error)
 
 ### Runtime
 
-When a state transition is executed, the main module that executes the state transition is the EVM (located in state/runtime/evm).
+When a state transition is executed, the main module that executes the state transition is the jVM (located in state/runtime/jvm).
 
 The **dispatch table** does a match between the **opcode** and the instruction.
 
-state/runtime/evm/dispatch\_table.go
+state/runtime/jvm/dispatch\_table.go
 
 ```
 func init() {
@@ -182,11 +182,11 @@ func init() {
 }
 ```
 
-The core logic that powers the EVM is the _Run_ loop.\\
+The core logic that powers the JVM is the _Run_ loop.\\
 
-This is the main entry point for the EVM. It does a loop and checks the current opcode, fetches the instruction, checks if it can be executed, consumes gas and executes the instruction until it either fails or stops.
+This is the main entry point for the JVM. It does a loop and checks the current opcode, fetches the instruction, checks if it can be executed, consumes gas and executes the instruction until it either fails or stops.
 
-state/runtime/evm/state.go
+state/runtime/jvm/state.go
 
 ```
 

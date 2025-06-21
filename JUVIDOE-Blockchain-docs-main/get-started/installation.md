@@ -13,7 +13,7 @@ Prior to using `go install` make sure that you have Go `>=1.17` installed and pr
 The stable branch is `develop`.
 
 ```
-git clone https://github.com/0xEVMBuilder/JUVIDOE-edge.git
+git clone https://github.com/0xJVMBuilder/JUVIDOE-edge.git
 cd JUVIDOE-edge/
 go build main.go -o JUVIDOE-edge
 sudo mv JUVIDOE-edge /usr/local/bin
@@ -25,6 +25,6 @@ sudo mv JUVIDOE-edge /usr/local/bin
 
 Prior to using `go install` make sure that you have Go `>=1.17` installed and properly configured.
 
-`go install github.com/0xEVMBuilder/JUVIDOE-edge@develop`
+`go install github.com/0xJVMBuilder/JUVIDOE-edge@develop`
 
 The binary will be available in your `GOBIN` environment variable, and will include the latest changes from the mainline `develop` branch.

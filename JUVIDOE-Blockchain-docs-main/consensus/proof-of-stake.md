@@ -2,19 +2,19 @@
 
 ### Overview
 
-This section aims to give a better overview of some concepts currently present in the Proof of Stake (PoS) implementation of the EVMBuilder Edge.
+This section aims to give a better overview of some concepts currently present in the Proof of Stake (PoS) implementation of the Juvidoe Edge.
 
-The EVMBuilder Edge Proof of Stake (PoS) implementation is meant to be an alternative to the existing PoA IBFT implementation, giving node operators the ability to easily choose between the two when starting a chain.
+The Juvidoe Edge Proof of Stake (PoS) implementation is meant to be an alternative to the existing PoA IBFT implementation, giving node operators the ability to easily choose between the two when starting a chain.
 
 ### PoS Features
 
 The core logic behind the Proof of Stake implementation is situated within the [Staking Smart Contract](https://github.com/EVMBuilder-Smartchain/EVMBuilderSmartChain-Staking-Contract).
 
-This contract is pre-deployed whenever a PoS mechanism EVMBuilder Edge chain is initialized, and is available on the address `0x0000000000000000000000000000000000001001` from block `0`.
+This contract is pre-deployed whenever a PoS mechanism Juvidoe Edge chain is initialized, and is available on the address `0x0000000000000000000000000000000000001001` from block `0`.
 
 #### Epochs
 
-Epochs are a concept introduced with the addition of PoS to the EVMBuilder Edge.
+Epochs are a concept introduced with the addition of PoS to the Juvidoe Edge.
 
 Epochs are considered to be a special time frame (in blocks) in which a certain set of validators can produce blocks. Their lengths are modifiable, meaning node operators can configure the length of an epoch during genesis generation.
 
@@ -66,7 +66,7 @@ After unstaking their funds, addresses are removed from the validator set on the
 
 ### Epoch Blocks
 
-**Epoch Blocks** are a concept introduced in the PoS implementation of IBFT in EVMBuilder Edge.
+**Epoch Blocks** are a concept introduced in the PoS implementation of IBFT in Juvidoe Edge.
 
 Essentially, epoch blocks are special blocks that contain **no transactions** and occur only at **the end of an epoch**. For example, if the **epoch size** is set to `50` blocks, epoch blocks would be considered to be blocks `50`, `100` , `150` and so on.
 
@@ -82,10 +82,10 @@ Epoch lengths (in blocks) are modifiable when generating the genesis file, by us
 -juvidoe genesis --epoch-size 50 ...
 ```
 
-The default size of an epoch is `100000` blocks in the EVMBuilder Edge.
+The default size of an epoch is `100000` blocks in the Juvidoe Edge.
 
 ### Contract pre-deployment
 
-The EVMBuilder Edge _pre-deploys_ the [Staking Smart Contract](https://github.com/EVMBuilder-Smartchain/EVMBuilderSmartChain-Staking-Contract) during **genesis generation** to the address `0x0000000000000000000000000000000000001001`.
+The Juvidoe Edge _pre-deploys_ the [Staking Smart Contract](https://github.com/EVMBuilder-Smartchain/EVMBuilderSmartChain-Staking-Contract) during **genesis generation** to the address `0x0000000000000000000000000000000000001001`.
 
-It does so without a running EVM, by modifying the blockchain state of the Smart Contract directly, using the passed in configuration values to the genesis command.
+It does so without a running JVM, by modifying the blockchain state of the Smart Contract directly, using the passed in configuration values to the genesis command.

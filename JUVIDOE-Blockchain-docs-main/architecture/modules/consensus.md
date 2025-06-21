@@ -8,7 +8,7 @@ Currently, the following consensus engines are available:
 
 * **IBFT PoS**
 
-The EVMBuilder Edge wants to maintain a state of modularity and pluggability.\
+The Juvidoe Edge wants to maintain a state of modularity and pluggability.\
 This is why the core consensus logic has been abstracted away, so new consensus mechanisms can be built on top, without compromising on usability and ease of use.
 
 ### Consensus Interface
@@ -63,7 +63,7 @@ There may be times when you might want to pass in a custom location for the cons
 #### ExtraData
 
 The blockchain header object, among other fields, has a field called **ExtraData**.\
-To review the fields present in the block header, please check out the **State in Ethereum** section.
+To review the fields present in the block header, please check out the **State in Juvidoe** section.
 
 IBFT uses this extra field to store operational information regarding the block, answering questions like:
 
@@ -341,7 +341,7 @@ type snapshotStore struct {
 
 #### IBFT Startup
 
-To start up IBFT, the EVMBuilder Edge firstly needs to set up the IBFT transport:
+To start up IBFT, the Juvidoe Edge firstly needs to set up the IBFT transport:
 
 consensus/ibft/ibft.go
 
@@ -385,7 +385,7 @@ func (i *Ibft) setupTransport() error {
 ```
 
 It essentially creates a new topic with IBFT proto, with a new proto buff message.\
-The messages are meant to be used by validators. The EVMBuilder Edge then subscribes to the topic and handles messages accordingly.
+The messages are meant to be used by validators. The Juvidoe Edge then subscribes to the topic and handles messages accordingly.
 
 **MessageReq**\[**​**] The message exchanged by validators:
 

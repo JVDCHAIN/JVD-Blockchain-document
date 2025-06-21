@@ -2,11 +2,11 @@
 
 ### Overview
 
-As mentioned before, EVMBuilder Edge is a set of different modules, all connected to each other.\
+As mentioned before, Juvidoe Edge is a set of different modules, all connected to each other.\
 The **Blockchain** is connected to the **State**, or for example, **Synchronization**, which pipes new blocks into the **Blockchain**.
 
 **Minimal** is the cornerstone for these inter-connected modules.\
-It acts as a central hub for all the services that run on the EVMBuilder Edge.
+It acts as a central hub for all the services that run on the Juvidoe Edge.
 
 ### Startup Magic
 
@@ -65,7 +65,7 @@ func NewServer(logger hclog.Logger, config *Config) (*Server, error) {
 
     executor := state.NewExecutor(config.Chain.Params, st)
     executor.SetRuntime(precompiled.NewPrecompiled())
-    executor.SetRuntime(evm.NewEVM())
+    executor.SetRuntime(jvm.NewJVM())
 
     // Blockchain object
     m.blockchain, err = blockchain.NewBlockchain(logger, storage, config.Chain, m.consensus, executor)

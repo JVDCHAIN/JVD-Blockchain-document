@@ -2,13 +2,13 @@
 
 ### JUVIDOE Chain <a href="#credit-smart-chain" id="credit-smart-chain"></a>
 
-JUVIDOE Chain is a modular and extensible framework for building Ethereum-compatible blockchain networks, sidechains, and general scaling solutions.
+JUVIDOE Chain is a modular and extensible framework for building Juvidoe-compatible blockchain networks, sidechains, and general scaling solutions.
 
-Its primary use is to bootstrap a new blockchain network while providing full compatibility with Ethereum smart contracts and transactions. It uses IBFT (Istanbul Byzantine Fault Tolerant) consensus mechanism, supported in one flavour as [PoS (proof of stake)](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/consensus/proof-of-stake).
+Its primary use is to bootstrap a new blockchain network while providing full compatibility with Juvidoe smart contracts and transactions. It uses IBFT (Istanbul Byzantine Fault Tolerant) consensus mechanism, supported in one flavour as [PoS (proof of stake)](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/consensus/proof-of-stake).
 
 JUVIDOE Chain also supports communication with multiple blockchain networks, enabling transfers of both [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) and [ERC-721](https://ethereum.org/en/developers/docs/standards/tokens/erc-721) tokens, by utilising the centralised bridge solution.
 
-Industry standard wallets can be used to interact with JUVIDOE Chain through the [JSON-RPC](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/json-rpc-commands) endpoints and node operators can perform various actions on the nodes through the [gRPC](https://tuoitresoft-1.gitbook.io/untitled/working-with-a-node/query-operator-information) protocol.
+Industry standard wallets can be used to interact with JUVIDOE Chain through the [JSON-RPC](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/json-rpc-commands) endpoints and node operators can perform various actions on the nodes through the gRPC protocol.
 
 To find out more about JUVIDOE Chain, visit the [official website](https://github.com/JVDCHAIN).
 

@@ -2,7 +2,7 @@
 
 ### Overview
 
-EVMBuilder Edge can report and serve the Prometheus metrics, which in their turn can be consumed using Prometheus collector(s).
+JVMBuilder Edge can report and serve the Prometheus metrics, which in their turn can be consumed using Prometheus collector(s).
 
 Prometheus metrics are disabled by default. It can be enabled by specifying the listener address using `--prometheus` flag or `Telemetry.prometheus` field in the config file. Metrics will be served under `/metrics` on the specified address.
 
