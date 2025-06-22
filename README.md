@@ -6,7 +6,7 @@ JUVIDOE Chain is a modular and extensible framework for building Juvidoe-compati
 
 Its primary use is to bootstrap a new blockchain network while providing full compatibility with Juvidoe smart contracts and transactions. It uses IBFT (Istanbul Byzantine Fault Tolerant) consensus mechanism, supported in one flavour as [PoS (proof of stake)](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/consensus/proof-of-stake).
 
-JUVIDOE Chain also supports communication with multiple blockchain networks, enabling transfers of both [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) and [ERC-721](https://ethereum.org/en/developers/docs/standards/tokens/erc-721) tokens, by utilising the centralised bridge solution.
+JUVIDOE Chain also supports communication with multiple blockchain networks, enabling transfers of both [JRC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) and [JRC-721](https://ethereum.org/en/developers/docs/standards/tokens/erc-721) tokens, by utilising the centralised bridge solution.
 
 Industry standard wallets can be used to interact with JUVIDOE Chain through the [JSON-RPC](https://juvidoe.gitbook.io/juvidoe-blockchain-docs/get-started/json-rpc-commands) endpoints and node operators can perform various actions on the nodes through the gRPC protocol.
 
